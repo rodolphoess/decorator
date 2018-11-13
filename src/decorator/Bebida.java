@@ -1,4 +1,4 @@
-package decorator_imp;
+package decorator;
 
 public abstract class Bebida {
 	protected String descricao;
@@ -11,5 +11,5 @@ public abstract class Bebida {
 		return descricao;
 	}
 	
-	abstract public double getPreco();
+	abstract public double getPreco(); 
 }
