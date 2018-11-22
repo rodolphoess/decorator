@@ -12,6 +12,17 @@ class Cafeteria {
 		Bebida caramelo = new Caramelo(creme);
 		Bebida moca = new Moca(caramelo);
 		System.out.println(moca.getDescricao() + " | R$ " + moca.getPreco());
+		
+		System.out.println("\n--------------------\n");
+		
+		Bebida mistura = new MisturaDaCasa();
+		System.out.println(mistura.getDescricao() + " | R$ " + mistura.getPreco());
+		
+		Bebida cremeMistura = new Creme(mistura);
+		System.out.println(cremeMistura.getDescricao() + " | R$ " + cremeMistura.getPreco());
+		
+		Bebida mocaMistura = new Moca(cremeMistura);
+		System.out.println(mocaMistura.getDescricao() + " | R$ " + mocaMistura.getPreco());
 	}
 
 }
